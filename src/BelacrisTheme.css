@@ -1,0 +1,69 @@
+/* Stil nou pentru meniuri si administrator.
+   Formularele de parcurs, tabelele si documentul Word NU sunt modificate. */
+.application {
+  background: #eff4f9;
+  color: #172e46;
+}
+.application .topbar {
+  background: linear-gradient(115deg, #09233c 0%, #163d63 70%, #1b4f7a 100%);
+  color: #fff;
+  padding: 20px 24px;
+  box-shadow: 0 7px 24px rgba(7, 37, 67, .12);
+}
+.application .topbar strong {
+  font: 800 clamp(21px, 3vw, 27px) 'Segoe UI', Arial, sans-serif;
+  letter-spacing: -.025em;
+}
+.application .topbar span {
+  font: 12px 'Segoe UI', Arial, sans-serif;
+  opacity: .79;
+}
+.application .toolbar {
+  background: #fff;
+  border-bottom: 1px solid #e0e8f2;
+  box-shadow: 0 3px 12px rgba(20, 57, 93, .05);
+  padding: 13px 20px;
+  gap: 13px;
+}
+.application .toolbar button,
+.application .home button {
+  border-radius: 10px;
+  background: #245f9b;
+  color: white;
+  box-shadow: 0 4px 10px rgba(25, 82, 143, .13);
+  font-weight: 650;
+}
+.application .toolbar button:hover,
+.application .home button:hover { background: #1a4e82; }
+.application .toolbar input[type="month"] { border: 1px solid #d8e3ef; padding: 7px 9px; border-radius: 9px; background: #f7fafe; color: #102d49; }
+.application .home {
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(12, 39, 69, .11);
+  border: 1px solid #e6edf5;
+}
+.application .scroll-paper { background: #eef3f8; }
+/* NU atingem .paper, .journey, .small-table sau .belacris-model-* */
+.beacris-admin {
+  border-radius: 20px;
+  border: 1px solid #e0e9f3;
+  box-shadow: 0 10px 34px rgba(14, 45, 79, .08);
+  background: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.beacris-admin > h2 { margin-top: 3px; color: #0e3150; font-size: clamp(23px, 3vw, 28px); letter-spacing: -.03em; }
+.beacris-admin > h3 { color: #1a3c5b; font-size: 17px; }
+.beacris-admin .beacris-admin-tablewrap { border: 1px solid #e5ecf5; border-radius: 12px; }
+.beacris-admin .beacris-admin-table th { background: #f0f6fc; color: #244869; font-weight: 700; }
+.beacris-admin .beacris-admin-table th,
+.beacris-admin .beacris-admin-table td { border-bottom: 1px solid #e8edf4; padding: 13px 14px; }
+.beacris-admin .beacris-admin-table tbody tr:hover { background: #f8fbff; }
+.beacris-admin button { border-radius: 9px; background: #245f9b; color: #fff; }
+.beacris-admin button:hover { background: #194b7c; }
+.beacris-admin .beacris-admin-preview { border: 1px solid #e0e9f3; border-radius: 14px; background: #f7fafd; }
+.beacris-admin .beacris-admin-preview-head { padding-bottom: 10px; }
+/* Nicio regula aici pentru .beacris-document-page sau tabelele foii. */
+@media (max-width: 700px) {
+  .application .toolbar { padding: 10px 12px; }
+  .application .topbar { padding: 16px 12px; }
+  .beacris-admin { border-radius: 12px; }
+}

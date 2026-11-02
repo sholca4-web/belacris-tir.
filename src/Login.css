@@ -1,0 +1,172 @@
+/* Pagina de login: imaginea originala PRO MOBILA, fara modificari. */
+.belacris-login,
+.belacris-login * { box-sizing: border-box; }
+
+.belacris-login {
+  --brand-navy: #0a2139;
+  --brand-blue: #2b72c6;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: clamp(20px, 5vw, 80px);
+  /* FUNDAL PRO MOBILA PE PAGINA, NU DOAR INTR-UN ELEMENT ASCUNS */
+  background-color: #0a2139;
+  background-image: url('/login-bg.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  color: #15243a;
+}
+
+/* Imaginea este desenata direct pe fundalul paginii. */
+.belacris-login__visual { display: none; }
+
+.belacris-login__accent {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent 40%, rgba(5, 20, 39, .34) 63%, rgba(5, 20, 39, .70) 100%);
+  pointer-events: none;
+}
+
+.belacris-login__card {
+  width: min(100%, 430px);
+  position: relative;
+  z-index: 1;
+  padding: clamp(25px, 3.6vw, 42px);
+  border: 1px solid rgba(255, 255, 255, .73);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 32px 95px rgba(0, 0, 0, .30), 0 6px 16px rgba(0, 0, 0, .10);
+  backdrop-filter: blur(18px);
+}
+
+.belacris-login__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: .13em;
+  font-weight: 800;
+  color: #2b638f;
+  border: 1px solid #dce9f4;
+  background: #eff7ff;
+  border-radius: 99px;
+  padding: 9px 12px;
+  margin-bottom: 20px;
+}
+.belacris-login__pill-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2297bf; }
+.belacris-login h1 { font-size: clamp(27px, 3vw, 36px); letter-spacing: -.04em; color: #102944; margin: 0 0 7px; font-weight: 850; line-height: 1.13; }
+.belacris-login h1 span { color: #2b72c6; }
+.belacris-login__subtitle { margin: 0 0 30px; color: #718096; font-size: 14px; }
+.belacris-login__form { display: flex; flex-direction: column; gap: 0; }
+.belacris-login__form > label { font-weight: 700; font-size: 13px; color: #29415b; margin-bottom: 9px; }
+.belacris-login__form > input,
+.belacris-login__password > input {
+  width: 100%;
+  min-height: 49px;
+  border: 1px solid #d5e0eb;
+  border-radius: 11px;
+  background: #f7fafe;
+  color: #122a44;
+  font: inherit;
+  font-size: 14px;
+  padding: 13px 15px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.belacris-login__form > input { margin-bottom: 22px; }
+.belacris-login__form input:focus { border-color: #3483dd; box-shadow: 0 0 0 4px rgba(47, 124, 210, .12); background: #fff; }
+.belacris-login__form input::placeholder { color: #99a9bd; }
+.belacris-login__password { position: relative; }
+.belacris-login__password > input { padding-right: 84px; }
+.belacris-login__show-password {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  bottom: 7px;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #285a8c;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.belacris-login__show-password:hover { background: #e9f3fc; }
+.belacris-login__submit {
+  width: 100%;
+  margin-top: 25px;
+  min-height: 51px;
+  padding: 12px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 0;
+  border-radius: 11px;
+  color: white;
+  background: linear-gradient(120deg, #174d87, #2e7ed1);
+  box-shadow: 0 10px 20px rgba(31, 101, 181, .24);
+  font-size: 15px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.belacris-login__submit:hover { background: linear-gradient(120deg, #103e70, #226bb7); transform: translateY(-1px); }
+.belacris-login__submit:disabled { opacity: .65; cursor: wait; }
+.belacris-login__submit span { font-size: 19px; line-height: 1; }
+.belacris-login__error { margin: 14px 0 0; padding: 11px 13px; border: 1px solid #f1c9cd; border-radius: 9px; background: #fff0f1; color: #a91d32; font-size: 13px; line-height: 1.4; }
+.belacris-login__footer { margin-top: 26px; border-top: 1px solid #e8eef5; padding-top: 18px; color: #8190a3; text-align: center; font-size: 11px; }
+.belacris-login__footer span { color: #25a47a; margin-right: 5px; font-size: 10px; }
+.belacris-login__copyright { position: absolute; left: 30px; bottom: 20px; font-size: 11px; color: rgba(232, 241, 251, .55); letter-spacing: .1em; }
+
+.belacris-loading {
+  min-height: 100vh; min-height: 100dvh;
+  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 13px;
+  background: #0a2139; color: #e9f2fb; font: 14px 'Segoe UI', Arial, sans-serif;
+}
+.belacris-loading__spinner { width: 31px; height: 31px; border-radius: 50%; border: 3px solid #37536d; border-top-color: #e8f2ff; animation: belacris-spin .8s linear infinite; }
+@keyframes belacris-spin { to { transform: rotate(360deg); } }
+
+.belacris-session__bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; background: #eef4fa; padding: 11px 20px; color: #173451; font: 13px 'Segoe UI', Arial, sans-serif; border-bottom: 1px solid #dbe5ef; }
+.belacris-session__identity { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.belacris-session__dot { width: 8px; height: 8px; display: inline-block; flex-shrink: 0; border-radius: 50%; background: #24a978; }
+.belacris-session__role { border: 1px solid #d4e5f2; background: white; border-radius: 30px; color: #38637c; font-size: 11px; font-weight: 700; padding: 5px 9px; }
+.belacris-session__logout { border: 0; background: #bb3444; color: white; border-radius: 9px; padding: 9px 14px; font-size: 13px; cursor: pointer; }
+.belacris-session__logout:hover { background: #9c2433; }
+
+@media (max-width: 850px) {
+  .belacris-login {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 37vh 15px 18px;
+    overflow-y: auto;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .belacris-login__accent { background: linear-gradient(180deg, transparent 16%, rgba(8, 28, 48, .06) 28%, #081f35 50%, #081f35 100%); }
+  .belacris-login__card { width: min(100%, 465px); padding: 25px 23px; border-radius: 21px; }
+  .belacris-login__copyright { display: none; }
+}
+@media (max-width: 390px) {
+  .belacris-login { padding: 36vh 12px 12px; }
+
+  .belacris-login__card { padding: 21px 17px; }
+  .belacris-login__pill { font-size: 9px; margin-bottom: 14px; }
+  .belacris-login h1 { font-size: 29px; }
+  .belacris-login__subtitle { margin-bottom: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .belacris-login__submit, .belacris-login__form input { transition: none; }
+  .belacris-loading__spinner { animation: none; }
+}

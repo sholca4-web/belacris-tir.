@@ -1,0 +1,16 @@
+/* Modelul din fotografia BELACRIS: antete grupate si sase randuri pe prima pagina. */
+.application .table-pair { display: grid; grid-template-columns: 35% 65%; gap: 0; }
+.application .table-triple { display: grid; grid-template-columns: 36% 30% 34%; gap: 0; }
+.application .table-pair > div, .application .table-triple > div { min-width: 0; }
+.application .belacris-model-small { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.application .belacris-model-small th,
+.beacris-admin .belacris-model-small th { vertical-align: middle; text-align: center; white-space: normal; line-height: 1.15; overflow-wrap: anywhere; }
+.application .belacris-model-small td { vertical-align: middle; }
+.application .belacris-model-journey,
+.beacris-admin .belacris-model-journey { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.application .belacris-model-journey thead th,
+.beacris-admin .belacris-model-journey thead th { vertical-align: middle; text-align: center; white-space: normal; overflow-wrap: anywhere; line-height: 1.15; }
+.application .belacris-model-journey td output { display: block; text-align: center; font-weight: 600; }
+.beacris-admin .beacris-document-pair { grid-template-columns: 35% 65%; }
+.beacris-admin .beacris-document-triple { grid-template-columns: 36% 30% 34%; }
+.beacris-admin .belacris-model-journey th { font-size: 8px; }
